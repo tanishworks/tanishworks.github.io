@@ -81,9 +81,18 @@ body {
   margin: 20px;
 }
 
-#flex1 {
+.flex-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.heatmap-container {
+  animation: niuPopIn 0.5s ease forwards;
+  animation-delay: 8.2s;
+  border-radius: 32px;
+  margin-left: 50px;
+  padding: 20px;
 }
 
 #intro-container {
@@ -117,7 +126,7 @@ body {
 }
 
 .skill {
-  margin: 30px;
+  margin-top: 30px;
   border-radius: 32px;
   padding: 20px;
   text-align: center;
@@ -134,6 +143,11 @@ body {
   animation-delay: 8.3s;
   padding: 10px;
   border-radius: 16px;
+  transition: all 0.2s ease;
+}
+
+.skill-icon:hover {
+  scale: 1.05;
 }
 
 #full-stack {
@@ -155,6 +169,17 @@ body {
 .tab {
   height: 100%;
   border-radius: 64px;
+}
+
+#tech-stack-container {
+  animation: niuPopIn 0.5s ease forwards;
+  animation-delay: 8.2s;
+  padding: 20px;
+  border-radius: 32px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 /* font config */
@@ -442,4 +467,86 @@ body {
 
 div {
   /* border: solid 2px white; */
+}
+
+
+:root {
+	--x: 0;
+	--y: 0;
+	--xp: 0;
+	--yp: 0;
+	--hue: calc(0 + (var(--xp) * 500));
+	--bg: hsl(0 0% 10%);
+	--size: 100px;
+	--glow: radial-gradient(50% 50% at center,
+			hsl(var(--hue) 80% 85%),
+			hsl(var(--hue) 80% 70%),
+			transparent) calc((var(--x) * 1px) - (var(--size) * 0.5)) calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
+}
+.controls {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+}
+
+.techStackContainer {
+	display: flex;
+	place-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.techStackButton {
+	border-radius: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1ch;
+	background: var(--bg);
+	border: 4px solid transparent;
+	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+	cursor: pointer;
+	background:
+		linear-gradient(var(--bg), var(--bg)) padding-box,
+		var(--glow),
+		linear-gradient(black, black) border-box;
+	transition: background-size 0.24s;
+	touch-action: none;
+	position: relative;
+	padding: 1rem 2rem;
+}
+
+.techStackButtonutton::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+	background: var(--bg);
+	z-index: 2;
+	border-radius: 1rem;
+}
+
+.techStackButton span {
+	background: var(--glow), black;
+	background-clip: text;
+	color: transparent;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	inset: 0;
+}
+
+:root:has(button:active) {
+	--size: 300px;
+}
+
+.techStackButton::after {
+	content: "";
+	position: absolute;
+	inset: -4px;
+	filter: blur(20px);
+	border: 4px solid transparent;
+	background: var(--glow);
+	border-radius: 1rem;
 }
