@@ -465,11 +465,6 @@ body {
   }
 }
 
-div {
-  /* border: solid 2px white; */
-}
-
-
 :root {
 	--x: 0;
 	--y: 0;
@@ -550,3 +545,8 @@ div {
 	background: var(--glow);
 	border-radius: 1rem;
 }
+
+div {
+  /* border: solid 2px white; */
+}
+
