@@ -1,0 +1,147 @@
+body {
+  background-color: black;
+  margin: 0;
+  color: #FFD52E;
+}
+
+p {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+}
+
+div  {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+}
+
+#page1 {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#page1-heading {
+  font-family: 'Forever Freedom', sans-serif;
+  font-size: 230px;
+  color: #9130ff;
+  text-align: center;
+  letter-spacing: 3px;
+  animation: page1-heading 0.5s ease-in-out;
+}
+
+#page1-para {
+  text-align: center;
+  font-weight: bold;
+  opacity: 0; /*changed by the animation*/
+  transform: translateY(-710%);
+  font-size: 1.25rem;
+  animation: page1-para 0.7s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+
+#nav-panel {
+  position: fixed;
+  bottom: 20px; /* stick to bottom */
+  left: 20px;   /* stick to left */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* spacing between lines */
+  font-size: 18px;
+  color: white;
+  border-left: white solid 1px;
+  border-radius: 10px;
+}
+
+.nav-panel-text {
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-panel-symbols {
+  font-size: 20px;
+}
+
+
+/* page 2 */
+
+#page2 {
+  height: 100vh;
+  width: 100vw;23
+}
+
+#page2-heading {
+  font-family: 'Forever Freedom', sans-serif;
+  font-size: 150px;
+  text-align: center;
+}
+
+/* animations */
+
+@keyframes page1-para {
+  0% {
+    opacity: 0;
+    transform: translateY(-650%);
+  }
+  90% {
+    transform: translateY(-710%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-710%);
+  }
+}
+
+@keyframes page1-heading {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* font config */
+
+/* Regular */
+@font-face {
+  font-family: 'Forever Freedom';
+  src: url('./fonts/2. Regular/Forever Freedom Regular.woff2') format('woff2'),
+       url('./fonts/2. Regular/Forever Freedom Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Forever Freedom';
+  src: url('./fonts/3. Italic/Forever-Freedom-Italic.woff2') format('woff2'),
+       url('./fonts/3. Italic/Forever Freedom Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Outline Regular */
+@font-face {
+  font-family: 'Forever Freedom Outline';
+  src: url('./fonts/4. Regular Outline/Forever Freedom Outline.otf') format('opentype'),
+       url('./fonts/4. Regular Outline/Forever Freedom Outline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Outline Italic */
+@font-face {
+  font-family: 'Forever Freedom Outline';
+  src: url('./fonts/5. Italic Outline/Forever Freedom Outline Italic.otf') format('opentype'),
+       url('./fonts/5. Italic Outline/Forever Freedom Outline Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
