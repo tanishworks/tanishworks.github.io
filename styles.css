@@ -92,11 +92,15 @@ body {
   padding-right: 40px;
   border-radius: 32px;
   animation: niuPopIn 0.5s ease forwards;
-  animation-delay: 8s;
+  animation-delay: 8.1s;
 }
 
 .intro-container-child {
-  margin: none;
+  margin: 5px;
+}
+
+#intro-para {
+  transform: translateY(-50%);
 }
 
 .niu-up {
