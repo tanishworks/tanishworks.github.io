@@ -81,6 +81,11 @@ body {
   margin: 20px;
 }
 
+#flex1 {
+  display: flex;
+  flex-direction: row;
+}
+
 #intro-container {
   display: flex;
   flex-direction: row;
@@ -101,6 +106,44 @@ body {
 
 #intro-para {
   transform: translateY(-50%);
+}
+
+#skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 50%;
+  height: 100%;
+}
+
+.skill {
+  margin: 30px;
+  border-radius: 32px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* pushes content to bottom */
+  align-items: center;       /* center horizontally */
+  height: 150px;             /* set a height so "bottom" has meaning */
+  width: 150px;
+}
+
+.skill-icon {
+  animation: niuPopIn 0.5s ease forwards;
+  animation-delay: 8.3s;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+#full-stack {
+  animation: niuPopIn 0.5s ease forwards;
+  animation-delay: 8.1s;
+}
+
+#cpp {
+  animation: niuPopIn 0.5s ease forwards;
+  animation-delay: 8.1s;
 }
 
 .niu-up {
@@ -372,6 +415,18 @@ body {
   }
 }
 
+@keyframes niuPopOut {
+  0% {
+    box-shadow: inset 0px 0px 0px #0f0f0f,
+                inset 0px 0px 0px #2d2d2d;
+  }
+
+  100% {
+    box-shadow: inset  18px  18px 24px #0f0f0f,
+                inset -18px -18px 24px #2d2d2d;
+  }
+}
+
 @keyframes bodyIn {
   0% {
     box-shadow: inset 0px 0px 0px #0f0f0f,
@@ -380,8 +435,8 @@ body {
   }
 
   100% {
-    box-shadow:  inset 18px 18px 24px #0f0f0f,
-               inset -18px -18px 24px #2d2d2d;
+    box-shadow: inset  18px  18px 24px #0f0f0f,
+                inset -18px -18px 24px #2d2d2d;
   }
 }
 
