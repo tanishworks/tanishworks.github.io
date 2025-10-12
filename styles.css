@@ -85,6 +85,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin: 50px;
+  gap: 50px;
 }
 
 .heatmap-container {
@@ -98,8 +101,8 @@ body {
 #intro-container {
   display: flex;
   flex-direction: row;
-  margin: 50px;
   width: fit-content;
+  height: fit-content;
   padding: 20px;
   padding-top: 0px;
   padding-bottom: 10px;
@@ -136,6 +139,7 @@ body {
   align-items: center;       /* center horizontally */
   height: 150px;             /* set a height so "bottom" has meaning */
   width: 150px;
+  transform: translateY(-5%)
 }
 
 .skill-icon {
@@ -144,6 +148,7 @@ body {
   padding: 10px;
   border-radius: 16px;
   transition: all 0.2s ease;
+  margin: 10px;
 }
 
 .skill-icon:hover {
