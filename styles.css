@@ -67,6 +67,7 @@ body {
   animation: niuPopIn 0.5s ease forwards;
   animation-delay: 8.4s;
 }
+
 .nav-panel {
   height: 100%;
   display: flex;
@@ -102,8 +103,8 @@ body {
 #intro-container {
   display: flex;
   flex-direction: row;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 65px;
+  padding-left: 65px;
   border-radius: 32px; 
   animation: niuPopIn 0.5s ease forwards;
   animation-delay: 8.1s;
@@ -276,9 +277,11 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: solid #242424 5px;
+  border: solid #242424 10px;
   object-fit: cover;
   margin-right: 20px;
+  animation: niuPopIn 0.5s ease forwards;
+  animation-delay: 8.7s;
 }
 
 a {
