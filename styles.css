@@ -194,9 +194,6 @@ body {
   margin-bottom: 50px;
 }
 
-
-/* For bigger monitors */
-
 @media (min-width: 1900px) {
   body {
     font-size: 30px;
@@ -239,6 +236,54 @@ body {
   .techStackButton {
     font-size: 30px;
   }
+}
+
+#flex3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.bottomBox {
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px; 
+  animation: niuPopIn 0.5s ease forwards;
+  animation-delay: 8.3s;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100%;
+}
+
+#bottomBox2 {
+  animation-delay: 8.5s;
+}
+
+#aboutHead {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#contactHead {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.pfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid #242424 5px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+a {
+  font-style: italic;
+  color: white;
 }
 
 /* font config */
