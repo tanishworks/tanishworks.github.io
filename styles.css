@@ -81,6 +81,11 @@ body {
   width: 100%;
   border-radius: 64px;
   margin: 20px;
+  overflow-y: scroll;
+}
+
+.tab {
+  overflow-y: scroll;
 }
 
 .flex-container {
