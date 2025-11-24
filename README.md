@@ -1,3 +1,5 @@
-These are the files to my Portfolio https://rainbowdesert57.github.io
-The branch niumorphic is the brach I am working on and then I will merge it into the main branch
-I am remaking this portfolio from scratch since I have learned alot more than when I first created one
+<div align=center>
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=900&size=40&pause=1000&color=1E1E1E&vCenter=true&width=537&lines=Tanish's+Portfolio;Tech+Portfolio;Programming+Porfolio)
+</div>
+
