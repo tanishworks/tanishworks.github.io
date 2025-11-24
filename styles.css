@@ -108,8 +108,8 @@ body {
 #intro-container {
   display: flex;
   flex-direction: row;
-  padding-right: 65px;
-  padding-left: 65px;
+  padding-right: 55px;
+  padding-left: 55px;
   border-radius: 32px; 
   animation: niuPopIn 0.5s ease forwards;
   animation-delay: 8.1s;
