@@ -84,8 +84,13 @@ body {
   overflow-y: scroll;
 }
 
-.tab {
+.tab.active {
   overflow-y: scroll;
+  display: block;
+}
+
+.tab {
+  display: none;
 }
 
 .flex-container {
@@ -461,6 +466,29 @@ a {
 
   .techStackButton {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .pfp {
+    height: 70px;
+    width: 70px;
+    border-width: 10px;
+  }
+
+  #aboutPara {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+  }
+
+  #projectBoxName {
+    padding-top: 15px;
+  }
+  #projectBoxInfo {
+    font-size: 1.1rem;
+    padding-top: 10px;
   }
 }
 

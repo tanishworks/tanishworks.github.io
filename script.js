@@ -30,3 +30,26 @@ function getAge(dob) {
 }
 
 document.getElementById('age').textContent = getAge(dob) + 'yo';
+
+//  Tab buttons
+const navMap = {
+  b1: "home-tab",
+  b2: "projects-tab",
+  b3: "timeline-tab",
+  b4: "upcoming-tab",
+  b5: "academics-tab"
+};
+
+const tabs = document.querySelectorAll(".tab");
+const buttons = document.querySelectorAll(".niuButton");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const targetId = navMap[button.id];
+    if (!targetId) return;
+
+    tabs.forEach(tab => tab.classList.remove("active"));
+    document.getElementById(targetId).classList.add("active");
+  });
+});
+
