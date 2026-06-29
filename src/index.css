@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
+
+:root {
+  --bg: #000000;
+
+  --surface: #0f0f0f;
+  --surface-2: #161616;
+
+  --text: #ffffff;
+  --text-muted: #e0e0e0e0;
+  --text-but-cooler: #2c1457;
+
+  --border: #222222;
+
+  --shadow:
+    rgba(0, 0, 0, 0.35) 0 10px 30px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* --sans: system-ui, 'Segoe UI', Roboto, sans-serif; */
+  /* --heading: system-ui, 'Segoe UI', Roboto, sans-serif; */
+  /* --mono: ui-monospace, Consolas, monospace; */
+
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+#root {
+  max-width: 100%;
+  margin-top: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg)
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(8rem, 14vw, 12rem);
+  line-height: 0.85;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(4rem, 6vw, 6rem);
+}
+
+h3 {
+  font-size: clamp(0.7rem, 6vw, 3.5rem);
+  line-height: 0.85;
+  margin: 0;
+}
+
+.bitcount-single {
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 350;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.bitcount {
+  font-family: "Bitcount", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 320;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.bitcount-prop-single {
+  font-family: "Bitcount Prop Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bitcount-grid-single {
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}

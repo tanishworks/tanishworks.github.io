@@ -1,0 +1,58 @@
+.nav-bar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 8px 6px;
+
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+
+  backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.15);
+
+  z-index: 999;
+}
+
+.nav-item {
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  padding: 4px 12px;
+  border-radius: 999px;
+
+  color: var(--text);
+
+  font: inherit;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.nav-item span {
+  position: relative;
+  z-index: 2;
+
+  transition: color 0.25s ease;
+}
+
+.nav-item.active span {
+  color: var(--bg);
+}
+
+.nav-pill {
+  position: absolute;
+  inset: 0;
+
+  background: var(--text);
+  border-radius: 999px;
+
+  z-index: 1;
+}
