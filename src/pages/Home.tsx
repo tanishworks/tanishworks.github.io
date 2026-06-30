@@ -1,5 +1,4 @@
 import FaultyTerminal from "@/components/FaultyTerminal";
-import AsciiPfp from "@/assets/ascii-pfp.svg";
 
 const Home = () => {
   return (
@@ -21,22 +20,10 @@ const Home = () => {
           brightness={0.6}
         />
       </div>
-      {/* <div className='bitcount-prop-single nav-bar' style={{ zIndex: 999 }}>
-        <p className='nav-item active'> Home </p>
-        <p className='nav-item'> Stats </p>
-        <p className='nav-item'> Projects </p>
-        <p className='nav-item'> Academics </p>
-        <p className='nav-item'> Connect </p>
-      </div> */}
 
       <div className='music-pill' style={{ zIndex: 999 }}>
       </div>
 
-      {/*
-        <div className='pfp-container' style={{ zIndex: 1 }}>
-          <img src={AsciiPfp} alt='pfp' className='pfp'/>
-        </div>
-      */}
       <div className='content' style={{ zIndex: 1 }}>
         <div className='hero'>
           <div className='hero-content'>
