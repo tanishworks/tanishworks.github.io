@@ -52,7 +52,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(8rem, 14vw, 12rem);
+  font-size: clamp(7rem, 14vw, 10rem);
   line-height: 0.85;
   margin: 0;
 }
@@ -62,7 +62,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(0.7rem, 6vw, 3.5rem);
+  font-size: clamp(0.6rem, 6vw, 3rem);
   line-height: 0.85;
   margin: 0;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
+import { TilingWM } from '@/components/Tilingwm/Tilingwm';
 import './Projects.css'
 
 const Projects: React.FC = () => {
   return (
     <>
       <div className='terminal-container' style={{ display: 'flex', flexDirection: 'column', height: '100svh', width: '100vw' }}>
-        <div className='window-manager'>
+        <TilingWM />
           {/*
             I totally did not hit the hardest pause thinking about how tf do wm even work
             
@@ -23,13 +24,6 @@ const Projects: React.FC = () => {
 
             future crucible you would need some hell of engineering for this one, move ts to a whole new component bru ur cooked
           */}
-          <div className='terminal' id='fastfetch'>
-          </div>
-          <div className='terminal' id='cmatrix'>
-          </div>
-          <div className='terminal' id='shell'>
-          </div>
-        </div>
       </div>
     </>
   );
