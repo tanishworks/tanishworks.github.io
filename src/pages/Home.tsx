@@ -1,4 +1,5 @@
 import FaultyTerminal from "@/components/FaultyTerminal";
+import { GitHubCalendar } from "react-github-calendar";
 
 const Home = () => {
   return (
@@ -41,7 +42,24 @@ const Home = () => {
             <p className='subtext'> This Month </p>
           </div>
           <div className='gist-card bitcount-grid-single' id='time'><span className='time-text'>13<br/>02</span></div>
-          <div className='gist-card bitcount' id='gist'><h3> Something about me </h3> <p className='inter about-me'>I spend most of my time building, learning, and asking questions. Interested in software, startups, and opportunities beyond the path I'm expected to follow.</p> </div>
+          <div className='gist-card bitcount' id='gist'>
+          {/*
+            <h3> Something about me </h3> <p className='inter about-me'>I spend most of my time building, learning, and asking questions. Interested in software, startups, and opportunities beyond the path I'm expected to follow.</p>
+          */}
+<GitHubCalendar
+      username="tanishworks"
+      theme={{
+        dark: [
+          "rgba(255,255,255,0.03)",
+          "rgba(255,255,255,0.15)",
+          "rgba(255,255,255,0.35)",
+          "rgba(255,255,255,0.65)",
+          "#ffffff",
+        ],
+      }}
+      colorScheme="dark"
+    />
+          </div>
           <div className='gist-card' id='icons'>
             <p className='bitcount-prop-single subtext' style={{ lineHeight: 1, }}>"We act as mortals in our fears and immortals in our desires."</p>
           </div>

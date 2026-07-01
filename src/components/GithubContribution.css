@@ -1,0 +1,32 @@
+.gh-heatmap {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.gh-heatmap__status {
+  font-size: 13px;
+  color: #57606a;
+  padding: 8px 0;
+}
+
+.gh-heatmap__status--error {
+  color: #cf222e;
+}
+
+.gh-heatmap__chart {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.gh-heatmap__chart svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Round every contribution cell. The rx/ry CSS property overrides
+   whatever rx/ry attribute the source SVG's <rect> elements carry. */
+.gh-heatmap__chart rect {
+  rx: var(--gh-heatmap-radius, 2px);
+  ry: var(--gh-heatmap-radius, 2px);
+}
